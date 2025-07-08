@@ -9,6 +9,9 @@ To accommodate this, nums1 has a length of m + n, where the first m elements den
 and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
 """
+
+import sys
+
 class Solution(object):
     def merge(self, nums1, m, nums2, n):
         """
@@ -36,3 +39,14 @@ class Solution(object):
                 p3 -= 1
                 p2 -= 1
             
+# ✅ Example usage
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6]
+n = 3
+
+solution = Solution()
+solution.merge(nums1, m, nums2, n)
+
+# ✅ Print the result
+print("Merged nums1:", nums1)
